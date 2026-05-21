@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha Morwal - Home | Python Backend Developer</title>
+    <meta name="description" content="Professional portfolio of Diksha Morwal, Python Backend Developer & Web Developer. Explore skills, projects, and home server setups.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="container animate-fade-in">
+        <!-- Floating Navigation & Action Bar -->
+        <header class="action-bar no-print">
+            <div class="action-logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">DIKSHA.DEV</span>
+            </div>
+            <!-- Dynamic Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="action-buttons">
+                <button id="theme-toggle" class="btn-action" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon moon-icon"></i>
+                    <i class="fas fa-sun sun-icon"></i>
+                </button>
+                <button onclick="window.print()" class="btn-primary" title="Print or Save as PDF">
+                    <i class="fas fa-file-pdf"></i> <span>Export PDF</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Resume Frame -->
+        <div class="resume-wrapper">
+            
+            <!-- Hero Header Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">Available for Work</div>
+                        <h1 class="name-title">DIKSHA MORWAL</h1>
+                        <p class="role-subtitle">Python Backend Developer &bull; Web Developer &bull; DevOps Enthusiast</p>
+                    </div>
+                    <!-- Contact Cards -->
+                    <div class="contact-grid">
+                        <a href="mailto:dikshamorwal3@gmail.com" class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Email Me</span>
+                                <span class="contact-value">dikshamorwal3@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919310673394" class="contact-card">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Call Me</span>
+                                <span class="contact-value">+91 93106 73394</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Dikshamorwal" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">GitHub Profile</span>
+                                <span class="contact-value">github.com/Dikshamorwal</span>
+                            </div>
+                        </a>
+                        <div class="contact-card no-link">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-info">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">New Delhi / Noida, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Two-Column Layout -->
+            <div class="resume-columns">
+                
+                <!-- Left Column (General Summary & Professional profile) -->
+                <aside class="left-column">
+                    <!-- Professional Summary -->
+                    <div class="resume-card summary-card">
+                        <h2 class="section-title"><i class="fas fa-user"></i> Professional Summary</h2>
+                        <p class="summary-text">
+                            Results-driven BCA student and self-taught Python developer with hands-on experience building full-stack web applications using <strong>Flask</strong>, <strong>FastAPI</strong>, and modern frontend technologies. Proficient in deploying containerized services with <strong>Docker</strong>, configuring secure tunnels with <strong>Cloudflare</strong> and <strong>Tailscale</strong>, and integrating REST APIs. Comfortable working in Linux environments and managing version-controlled codebases via GitHub. Seeking a backend or web developer role to contribute practical skills and continue growing as an engineer.
+                        </p>
+                    </div>
+
+                    <!-- Personal Information quick list -->
+                    <div class="resume-card summary-card">
+                        <h2 class="section-title"><i class="fas fa-id-card"></i> Personal Profile</h2>
+                        <ul class="additional-list">
+                            <li><i class="fas fa-graduation-cap"></i> <span><strong>Current Study:</strong> BCA Undergraduate (2nd Year)</span></li>
+                            <li><i class="fas fa-laptop-code"></i> <span><strong>Core Stack:</strong> Python Backend, Flask, FastAPI</span></li>
+                            <li><i class="fas fa-terminal"></i> <span><strong>OS Preference:</strong> Linux (Ubuntu Server / Lab)</span></li>
+                            <li><i class="fas fa-globe-asia"></i> <span><strong>Languages spoken:</strong> English & Hindi</span></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Right Column (Highlights & Quick navigation buttons) -->
+                <main class="right-column">
+                    <div class="resume-card">
+                        <h2 class="section-title"><i class="fas fa-compass"></i> Welcome to my Web Portfolio</h2>
+                        <p class="summary-text" style="margin-bottom: 1.5rem;">
+                            Hello! I am a software engineer focused on building robust backend systems, containerized web servers, and local networking infrastructures. I've designed this multi-page workspace to showcases my specific capabilities across key dimensions of developer engineering.
+                        </p>
+                        
+                        <div class="lab-infra-diagram">
+                            <a href="skills.html" class="lab-node" style="text-decoration: none; color: inherit;">
+                                <div class="lab-node-icon"><i class="fas fa-brain"></i></div>
+                                <h4>Skills Dashboard</h4>
+                                <p>Interactive review of Python, frameworks, database, and devops proficiencies.</p>
+                            </a>
+                            <a href="blog.html" class="lab-node" style="text-decoration: none; color: inherit;">
+                                <div class="lab-node-icon"><i class="fas fa-blog"></i></div>
+                                <h4>Developer Blog</h4>
+                                <p>Read tutorials, deep-dives, and lessons from backend engineering.</p>
+                            </a>
+                            <a href="experience.html" class="lab-node" style="text-decoration: none; color: inherit;">
+                                <div class="lab-node-icon"><i class="fas fa-server"></i></div>
+                                <h4>Home Server & Education</h4>
+                                <p>Review academic background and secure local networking homelab.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="resume-card">
+                        <h2 class="section-title"><i class="fas fa-bolt"></i> Key Core Competencies</h2>
+                        <p class="summary-text" style="margin-bottom: 1rem;">
+                            Here is a snapshot of core standards and models I employ across my pipelines:
+                        </p>
+                        <ul class="additional-list">
+                            <li><i class="fas fa-check-circle"></i> <span><strong>REST API Architecture:</strong> Implementing clean separation with models, routes, and services using Flask Blueprints and FastAPI Routers.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span><strong>Containerization first:</strong> Packaging services using optimized Dockerfiles and Docker Compose orchestrations.</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span><strong>Secure Networking:</strong> Deploying reverse proxies and encrypting lines with Cloudflare Tunnels and Tailscale virtual private meshes.</span></li>
+                        </ul>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="resume-footer no-print">
+            <p>Designed with <i class="fas fa-heart"></i> for Diksha Morwal &copy; 2026. Press <strong>Ctrl + P</strong> to save this web page as a standard PDF document.</p>
+        </footer>
+    </div>
+
+    <!-- Script file for UI Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>

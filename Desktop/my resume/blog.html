@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha Morwal - Blog | Python Developer</title>
+    <meta name="description" content="Technical blog posts and articles by Diksha Morwal covering Python, Flask, FastAPI, Docker, Linux, and web development.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="container animate-fade-in">
+        <!-- Floating Navigation & Action Bar -->
+        <header class="action-bar no-print">
+            <div class="action-logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">DIKSHA.DEV</span>
+            </div>
+            <!-- Dynamic Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="action-buttons">
+                <button id="theme-toggle" class="btn-action" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon moon-icon"></i>
+                    <i class="fas fa-sun sun-icon"></i>
+                </button>
+                <button onclick="window.print()" class="btn-primary" title="Print or Save as PDF">
+                    <i class="fas fa-file-pdf"></i> <span>Export PDF</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Blog Main Content -->
+        <div class="resume-wrapper">
+            <!-- Blog Header Card -->
+            <div class="resume-card" style="margin-bottom: 0.5rem;">
+                <h1 class="section-title" style="border-bottom: none; padding-bottom: 0; margin-bottom: 0.5rem;">
+                    <i class="fas fa-blog"></i> Developer Blog
+                </h1>
+                <p class="summary-text" style="margin-bottom: 1.5rem;">
+                    Thoughts, tutorials, and deep-dives into Python backend development, DevOps practices, containerization workflows, and lessons learned from building real-world projects.
+                </p>
+
+                <!-- Search Bar -->
+                <div class="search-filter-wrapper">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="blog-search" class="search-input" placeholder="Search articles by title, topic, or tag...">
+                    </div>
+                </div>
+
+                <!-- Category Filter Tags -->
+                <div class="blog-categories no-print">
+                    <h3 style="font-size: 0.75rem; margin-bottom: 0.4rem;"><i class="fas fa-tags"></i> Browse by Category:</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag blog-filter-tag" data-category="all" onclick="filterBlog('all')"><i class="fas fa-th-large"></i> All Posts</span>
+                        <span class="skill-tag blog-filter-tag" data-category="python" onclick="filterBlog('python')"><i class="fab fa-python text-python"></i> Python</span>
+                        <span class="skill-tag blog-filter-tag" data-category="devops" onclick="filterBlog('devops')"><i class="fab fa-docker text-docker"></i> DevOps</span>
+                        <span class="skill-tag blog-filter-tag" data-category="web" onclick="filterBlog('web')"><i class="fas fa-globe text-html"></i> Web Dev</span>
+                        <span class="skill-tag blog-filter-tag" data-category="linux" onclick="filterBlog('linux')"><i class="fab fa-linux text-linux"></i> Linux</span>
+                        <span class="skill-tag blog-filter-tag" data-category="learning" onclick="filterBlog('learning')"><i class="fas fa-lightbulb text-fastapi"></i> Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="blog-grid" id="blog-grid">
+
+                <!-- Blog Post 1 -->
+                <article class="blog-card" data-category="python devops">
+                    <div class="blog-card-accent"></div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> May 18, 2026</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h2 class="blog-title">Containerizing a Flask App with Docker: A Step-by-Step Guide</h2>
+                        <p class="blog-excerpt">
+                            Learn how to package a complete Flask REST API into a production-ready Docker container — from writing an optimized Dockerfile, to handling environment variables, to deploying with Docker Compose.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="blog-tag"><i class="fas fa-pepper-hot"></i> Flask</span>
+                            <span class="blog-tag"><i class="fab fa-docker"></i> Docker</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card" data-category="devops linux">
+                    <div class="blog-card-accent"></div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> May 10, 2026</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h2 class="blog-title">Setting Up a Secure Home Lab with Tailscale & Cloudflare Tunnels</h2>
+                        <p class="blog-excerpt">
+                            A practical walkthrough on how I configured my Ubuntu home server to securely expose web services to the internet using Cloudflare Tunnels while maintaining private SSH access through a Tailscale VPN mesh.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag"><i class="fab fa-linux"></i> Linux</span>
+                            <span class="blog-tag"><i class="fas fa-shield-alt"></i> Tailscale</span>
+                            <span class="blog-tag"><i class="fas fa-cloud"></i> Cloudflare</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card" data-category="python web">
+                    <div class="blog-card-accent"></div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> Apr 28, 2026</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h2 class="blog-title">FastAPI vs Flask: Which Python Framework Should You Choose?</h2>
+                        <p class="blog-excerpt">
+                            An honest comparison between Flask and FastAPI based on my experience building production APIs with both. Covering performance, async support, auto-generated docs, and developer experience trade-offs.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag"><i class="fab fa-python"></i> Python</span>
+                            <span class="blog-tag"><i class="fas fa-bolt"></i> FastAPI</span>
+                            <span class="blog-tag"><i class="fas fa-pepper-hot"></i> Flask</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-card" data-category="learning">
+                    <div class="blog-card-accent"></div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> Apr 15, 2026</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h2 class="blog-title">How I Stay Productive as a Self-Taught Developer While in College</h2>
+                        <p class="blog-excerpt">
+                            Balancing a BCA degree with self-taught coding is challenging. Here's my personal system — from managing GitHub projects, to scheduling learning sprints, to avoiding burnout during exam season.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag"><i class="fas fa-lightbulb"></i> Productivity</span>
+                            <span class="blog-tag"><i class="fas fa-graduation-cap"></i> College</span>
+                            <span class="blog-tag"><i class="fas fa-brain"></i> Mindset</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="blog-card" data-category="python web">
+                    <div class="blog-card-accent"></div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> Mar 30, 2026</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h2 class="blog-title">Building a JWT Authentication System from Scratch with FastAPI</h2>
+                        <p class="blog-excerpt">
+                            A hands-on tutorial showing how to implement secure JSON Web Token (JWT) authentication in FastAPI — covering token generation, password hashing with bcrypt, route protection middleware, and token refresh patterns.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag"><i class="fas fa-bolt"></i> FastAPI</span>
+                            <span class="blog-tag"><i class="fas fa-lock"></i> Security</span>
+                            <span class="blog-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="blog-card" data-category="linux devops">
+                    <div class="blog-card-accent"></div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-date"><i class="far fa-calendar-alt"></i> Mar 12, 2026</span>
+                            <span class="blog-read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h2 class="blog-title">Automating Server Tasks with Systemd & Cron on Ubuntu</h2>
+                        <p class="blog-excerpt">
+                            How I set up automated container health checks, log rotations, and service recovery on my home lab using custom systemd unit files and cron job scheduling — no third-party tools required.
+                        </p>
+                        <div class="blog-tags">
+                            <span class="blog-tag"><i class="fab fa-linux"></i> Ubuntu</span>
+                            <span class="blog-tag"><i class="fas fa-terminal"></i> Systemd</span>
+                            <span class="blog-tag"><i class="fas fa-cogs"></i> Automation</span>
+                        </div>
+                        <a href="#" class="blog-read-more">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div id="blog-no-results" class="blog-no-results" style="display: none;">
+                <div class="no-results-icon"><i class="fas fa-search"></i></div>
+                <h3>No articles found</h3>
+                <p>Try adjusting your search or clearing the category filter.</p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="resume-footer no-print">
+            <p>Designed with <i class="fas fa-heart"></i> for Diksha Morwal &copy; 2026. Press <strong>Ctrl + P</strong> to save this web page as a standard PDF document.</p>
+        </footer>
+    </div>
+
+    <!-- Script file for UI Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>

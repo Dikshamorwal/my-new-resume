@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diksha Morwal - Experience & Lab | Python Developer</title>
+    <meta name="description" content="Education history and Linux home server architecture of Diksha Morwal.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="container animate-fade-in">
+        <!-- Floating Navigation & Action Bar -->
+        <header class="action-bar no-print">
+            <div class="action-logo">
+                <span class="logo-dot"></span>
+                <span class="logo-text">DIKSHA.DEV</span>
+            </div>
+            <!-- Dynamic Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="experience.html" class="nav-link active">Experience</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="action-buttons">
+                <button id="theme-toggle" class="btn-action" title="Toggle Light/Dark Mode" aria-label="Toggle Light/Dark Mode">
+                    <i class="fas fa-moon moon-icon"></i>
+                    <i class="fas fa-sun sun-icon"></i>
+                </button>
+                <button onclick="window.print()" class="btn-primary" title="Print or Save as PDF">
+                    <i class="fas fa-file-pdf"></i> <span>Export PDF</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Experience Main Content -->
+        <div class="resume-wrapper">
+            <div class="resume-columns">
+                
+                <!-- Left Column (Education & Certifications) -->
+                <aside class="left-column">
+                    <!-- Education -->
+                    <div class="resume-card education-card">
+                        <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education History</h2>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-header">
+                                    <span class="timeline-date">2023 – Present (2nd Year)</span>
+                                    <h3 class="timeline-degree">Bachelor of Computer Applications (BCA)</h3>
+                                </div>
+                                <p class="timeline-institution">Amity University, Noida</p>
+                                <span class="timeline-tag">Undergraduate Study</span>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-header">
+                                    <span class="timeline-date">Completed 2023</span>
+                                    <h3 class="timeline-degree">Class XII Secondary Education</h3>
+                                </div>
+                                <p class="timeline-institution">CBSE Board</p>
+                                <span class="timeline-tag">CBSE High School</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications -->
+                    <div class="resume-card certifications-card">
+                        <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
+                        <div class="certs-list">
+                            <div class="cert-item">
+                                <div class="cert-icon"><i class="fas fa-award"></i></div>
+                                <div class="cert-details">
+                                    <h4>Programming in Python with AI</h4>
+                                    <p>Internshala &bull; 2024</p>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon"><i class="fas fa-award"></i></div>
+                                <div class="cert-details">
+                                    <h4>Computer Fundamentals & Office Applications</h4>
+                                    <p>Computer Course Certificate &bull; 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Right Column (Linux Home Lab Node Topology) -->
+                <main class="right-column">
+                    <!-- Lab Overview -->
+                    <div class="resume-card">
+                        <h2 class="section-title"><i class="fas fa-server"></i> Linux Home Lab Topology</h2>
+                        <p class="summary-text" style="margin-bottom: 1rem;">
+                            I manage and operate a personal home lab hosting server instances that mimic enterprise-level DevOps pipelines. This allows me to test codebases and deployment scenarios inside isolated, secure sandboxes.
+                        </p>
+                        
+                        <div class="lab-infra-diagram">
+                            <div class="lab-node">
+                                <div class="lab-node-icon"><i class="fab fa-linux"></i></div>
+                                <h4>Ubuntu Server Host</h4>
+                                <p>Central physical home lab server hosting Docker containers.</p>
+                            </div>
+                            
+                            <div class="lab-node">
+                                <div class="lab-node-icon"><i class="fab fa-docker"></i></div>
+                                <h4>Docker Orchestrator</h4>
+                                <p>Docker Compose isolating Flask/FastAPI backend API microservices.</p>
+                            </div>
+
+                            <div class="lab-node">
+                                <div class="lab-node-icon"><i class="fas fa-cloud"></i></div>
+                                <h4>Cloudflare Proxy Tunnel</h4>
+                                <p>Exposes select container nodes securely to public internet over SSL.</p>
+                            </div>
+
+                            <div class="lab-node">
+                                <div class="lab-node-icon"><i class="fas fa-shield-alt"></i></div>
+                                <h4>Tailscale Private Mesh</h4>
+                                <p>Allows encrypted SSH and database node connections across machines.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Details -->
+                    <div class="resume-card">
+                        <h2 class="section-title"><i class="fas fa-info-circle"></i> Workflows & Practices</h2>
+                        <ul class="additional-list">
+                            <li><i class="fas fa-angle-right"></i> <span><strong>Systemd & Automation:</strong> Wrote custom unit config files inside `/etc/systemd/system/` to automate server service boots and recovery loops.</span></li>
+                            <li><i class="fas fa-angle-right"></i> <span><strong>Cron Job Monitors:</strong> Scheduled routine bash scripts to check container resource allocation thresholds and back up database logs.</span></li>
+                            <li><i class="fas fa-angle-right"></i> <span><strong>Agile Tasking:</strong> Tracking deployment milestones using clear Git branching strategies and GitHub Boards.</span></li>
+                        </ul>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="resume-footer no-print">
+            <p>Designed with <i class="fas fa-heart"></i> for Diksha Morwal &copy; 2026. Press <strong>Ctrl + P</strong> to save this web page as a standard PDF document.</p>
+        </footer>
+    </div>
+
+    <!-- Script file for UI Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
