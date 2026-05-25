@@ -915,6 +915,12 @@ ul {
   color: var(--black);
 }
 
+.resume-preview-header .contact-row svg {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 .resume-section {
   margin-bottom: 32px;
 }
