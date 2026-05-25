@@ -75,55 +75,38 @@
               In this article, we will compare GitHub, Netlify, and Vercel, understand their strengths, explore their key differences, and help you decide which platform is the right fit for your next project.
           </p>
 
-            <h2>Introduction to GitHub</h2>
+            <h2>Introduction to Netlify and Vercel</h2>
 
-            <p>
-         GitHub is one of the most widely used developer platforms in the world. It helps developers manage code using Git version control while keeping projects organized and easy to update.
-         </p>
-         <p>
-          Developers use GitHub to store repositories, track every change, manage branches, collaborate with teams, and maintain project history. It also connects smoothly with deployment platforms like Netlify and Vercel, making the workflow simple from development to production.
+            <p>  Netlify and Vercel are modern cloud platforms designed to make website deployment simple and fast. Both platforms connect directly with GitHub repositories and automatically publish updates whenever new code is pushed.
           </p>
+         
+         <p>
+          Netlify is especially useful for portfolio websites, landing pages, and static frontend projects. Vercel is widely used for modern frontend development, especially with frameworks like React and Next.js. Both platforms help developers move from local development to a live website in just a few steps.
+           </p>
+
            
-            <pre><code>git init
-           git add .
-         git commit -m "updated portfolio website"
-            git push origin main</code></pre>
-
-            <h2>Introduction to Bootstrap</h2>
-
-            <p>Originally developed by <strong>Mark Otto</strong> and <strong>Jacob Thornton</strong> at Twitter, Bootstrap is the oldest and most widely adopted CSS framework. Now in its fifth version, Bootstrap provides a comprehensive collection of <strong>pre-built components</strong>, a responsive 12-column grid system, and extensive JavaScript plugins.</p>
-
-            <p>Bootstrap follows a <strong>component-first</strong> approach. You can quickly assemble a professional-looking interface by combining ready-made components like <code>.navbar</code>, <code>.card</code>, <code>.btn</code>, <code>.modal</code>, and <code>.form-control</code>. Customization is achieved through <strong>Sass variables</strong> and a built-in theme system.</p>
-
-            <pre><code>&lt;div class="card" style="max-width: 24rem;"&gt;
-    &lt;img src="photo.jpg" class="card-img-top"
-         alt="Card image"&gt;
-
-    &lt;div class="card-body"&gt;
-        &lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;
-        &lt;p class="card-text"&gt;
-            This is a description using
-            Bootstrap component classes.
-        &lt;/p&gt;
-        &lt;a href="#" class="btn btn-primary"&gt;
-            Learn More
-        &lt;/a&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+            <pre><code>Build project locally
+             ↓
+           Push code to GitHub
+              ↓
+             Netlify or Vercel auto deploy
+                ↓
+            Website goes live
+             </code></pre>
 
             <h2>Key Differences</h2>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0;">
               <div class="p-6 bg-beige rounded-xl">
-                <h3 class="font-bold text-lg mb-3">Tailwind CSS</h3>
+                <h3 class="font-bold text-lg mb-3">GitHub</h3>
                 <ul class="list-disc pl-5 space-y-2">
-                  <li>Utility-first approach</li>
-                  <li>Fully customizable design system</li>
-                  <li>Smaller production builds (purge CSS)</li>
-                  <li>No pre-built components</li>
-                  <li>Steeper learning curve</li>
-                  <li>Built with mobile-first breakpoints</li>
-                </ul>
+                  <ul class="list-disc pl-5 space-y-2">
+                    <li>Version control platform</li>
+                    <li>Repository management</li>
+                     <li>Branch tracking</li>
+                  <li>Project collaboration</li>
+                <li>Easy deployment integration</li>
+                 </ul>
               </div>
               <div class="p-6 bg-beige rounded-xl">
                 <h3 class="font-bold text-lg mb-3">Bootstrap</h3>
