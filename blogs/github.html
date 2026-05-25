@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A detailed comparison of Tailwind CSS and Bootstrap to help you choose the right CSS framework for your project.">
+  <title>Deploying My Portfolio with GitHub, Netlify and Vercel | Diksha Morwal</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: '#f5f0eb',
+            'beige-hover': '#ede6de',
+            brown: '#b8a08e',
+            'brown-dark': '#8b7355',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .blog-article h2 { font-size: 1.75rem; font-weight: 700; margin: 40px 0 16px; }
+    .blog-article h3 { font-size: 1.3rem; font-weight: 600; margin: 32px 0 12px; }
+    .blog-article p { color: #4b5563; line-height: 1.8; margin-bottom: 16px; }
+    .blog-article ul, .blog-article ol { color: #4b5563; line-height: 1.8; margin-bottom: 16px; padding-left: 24px; }
+    .blog-article li { margin-bottom: 8px; }
+    .blog-article pre { background: #1a1a2e; color: #e2e8f0; padding: 20px; border-radius: 12px; overflow-x: auto; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; }
+    .blog-article code { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+    .blog-article pre code { background: none; padding: 0; }
+    .blog-article p code, .blog-article li code { background: #f5f0eb; padding: 2px 8px; border-radius: 4px; font-size: 0.88rem; color: #1a1a1a; }
+    .blog-article blockquote { border-left: 4px solid #b8a08e; padding: 16px 24px; margin: 24px 0; background: #f5f0eb; border-radius: 0 12px 12px 0; font-style: italic; color: #4b5563; }
+    .blog-article table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+    .blog-article th, .blog-article td { border: 1px solid #e5e7eb; padding: 12px 16px; text-align: left; }
+    .blog-article th { background: #f5f0eb; font-weight: 600; }
+    .blog-article img { border-radius: 12px; margin: 24px 0; }
+  </style>
+</head>
+<body data-page="blog">
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section" style="padding-top: 140px;">
+      <div class="container">
+        <div class="max-w-3xl mx-auto">
+          <a href="../blog.html" class="inline-flex items-center gap-2 text-brown hover:text-black mb-8 transition">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Blog
+          </a>
+
+          <article class="blog-article">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="text-sm font-semibold uppercase tracking-wider text-brown">Github</span>
+              <span class="text-sm text-gray-400">May 25, 2026</span>
+              <span class="text-sm text-gray-400">8 min read</span>
+            </div>
+
+            <h1 class="text-4xl font-bold mb-8 leading-tight">Tailwind CSS vs Bootstrap: Which Framework Should You Choose?</h1>
+
+            <p class="text-lg text-gray-500 leading-relaxed mb-8">A detailed comparison of the two most popular CSS frameworks to help you make the right choice.</p>
+
+            <p>When starting a new web project, one of the first decisions you will face is choosing a <strong>CSS framework</strong>. Two names dominate the conversation: <strong>Tailwind CSS</strong> and <strong>Bootstrap</strong>. Both are powerful tools that accelerate development, but they take fundamentally different approaches to styling.</p>
+
+                        <h2>Final Conclusion</h2>
+
+            <p>There is no universally "better" framework—the right choice depends on your <strong>project requirements</strong>, <strong>team expertise</strong>, and <strong>design goals</strong>. Both Tailwind CSS and Bootstrap are excellent tools that serve different needs.</p>
+
+            <p>If you value <strong>creative freedom</strong> and want full control over every aspect of your design, Tailwind CSS is the clear winner. If you need to ship a <strong>working product quickly</strong> with consistent, well-tested components, Bootstrap will serve you well.</p>
+
+            <p>Many developers end up learning both. Start with whichever aligns with your current project, and over time you will gain the versatility to choose the right tool for each job.</p>
+
+            <p>The best framework is the one that helps you build great products efficiently. Tailwind gives you wings; Bootstrap gives you a sturdy ship. Choose your vessel wisely.</p>
+
+            <p class="text-brown font-semibold mt-8">— Modern CSS Developer</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="../assets/js/main.js?v=2"></script>
+</body>
+</html>
