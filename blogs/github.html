@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A detailed comparison of Tailwind CSS and Bootstrap to help you choose the right CSS framework for your project.">
+  <meta name="description" content="A detailed comparison of three widely used developer platforms to help you choose the right workflow for managing code, deploying websites, and building modern web projects.">
   <title>Deploying My Portfolio with GitHub, Netlify and Vercel | Diksha Morwal</title>
   <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
   <link rel="stylesheet" href="../assets/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
+   tailwind.config = {
       theme: {
         extend: {
           colors: {
@@ -56,17 +55,200 @@
 
           <article class="blog-article">
             <div class="flex items-center gap-4 mb-4">
-              <span class="text-sm font-semibold uppercase tracking-wider text-brown">Github</span>
-              <span class="text-sm text-gray-400">May 25, 2026</span>
-              <span class="text-sm text-gray-400">8 min read</span>
+             <span class="text-sm font-semibold uppercase tracking-wider text-brown">Development Workflow</span>              <span class="text-sm text-gray-400">May 23, 2026</span>
+              <span class="text-sm text-gray-400">7 min read</span>
             </div>
 
-            <h1 class="text-4xl font-bold mb-8 leading-tight"></h1>
-            <p class="text-lg text-gray-500 leading-relaxed mb-8">A detailed comparison of the two most popular CSS frameworks to help you make the right choice.</p>
+            <h1 class="text-4xl font-bold mb-8 leading-tight">GitHub vs Netlify vs Vercel: Which Platform Should You Choose?</h1>
+
+            <p class="text-lg text-gray-500 leading-relaxed mb-8"> A detailed comparison of three widely used developer platforms to help you choose the right workflow for managing code, deploying websites, and building modern web projects.</p>
 
             <p>When starting a new web project, one of the first decisions you will face is choosing a <strong>CSS framework</strong>. Two names dominate the conversation: <strong>Tailwind CSS</strong> and <strong>Bootstrap</strong>. Both are powerful tools that accelerate development, but they take fundamentally different approaches to styling.</p>
 
-                        <h2>Final Conclusion</h2>
+            <p>
+               GitHub works as a <strong>version control platform</strong> that helps developers manage code and keep track of every project update. Netlify and Vercel, on the other hand, are <strong>deployment platforms</strong> that publish websites online and automatically update them whenever new changes are pushed.
+               </p>
+
+            <p>In this article, we will dive deep into both frameworks, compare their philosophies, examine their strengths and weaknesses, and help you decide which one is right for your next project.</p>
+
+            <h2>Introduction to Tailwind CSS</h2>
+
+            <p>Created by <strong>Adam Wathan</strong> and released in 2017, Tailwind CSS has rapidly grown to become one of the most popular CSS frameworks in the developer community. Unlike traditional frameworks, Tailwind does not provide pre-designed components. Instead, it gives you hundreds of <strong>utility classes</strong> that you compose directly in your HTML markup.</p>
+
+            <p>With Tailwind, you build your design system from the ground up using classes like <code>flex</code>, <code>pt-4</code>, <code>text-center</code>, <code>rounded-lg</code>, <code>shadow-md</code>, and <code>hover:bg-blue-500</code>. This approach gives you complete creative freedom without fighting against framework defaults.</p>
+
+            <pre><code>&lt;div class="max-w-sm mx-auto bg-white dark:bg-gray-800
+     rounded-xl shadow-lg overflow-hidden
+     hover:shadow-2xl transition-shadow duration-300"&gt;
+
+    &lt;img class="w-full h-48 object-cover"
+         src="photo.jpg" alt="Card image"&gt;
+
+    &lt;div class="p-6"&gt;
+        &lt;h2 class="text-xl font-bold text-gray-900
+                   dark:text-white mb-2"&gt;
+            Card Title
+        &lt;/h2&gt;
+        &lt;p class="text-gray-600 dark:text-gray-300
+                  text-sm leading-relaxed mb-4"&gt;
+            This is a description using only utility classes.
+        &lt;/p&gt;
+        &lt;button class="px-4 py-2 bg-blue-600 text-white
+                       rounded-lg font-medium text-sm
+                       hover:bg-blue-700
+                       transition-colors duration-200"&gt;
+            Learn More
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h2>Introduction to Bootstrap</h2>
+
+            <p>Originally developed by <strong>Mark Otto</strong> and <strong>Jacob Thornton</strong> at Twitter, Bootstrap is the oldest and most widely adopted CSS framework. Now in its fifth version, Bootstrap provides a comprehensive collection of <strong>pre-built components</strong>, a responsive 12-column grid system, and extensive JavaScript plugins.</p>
+
+            <p>Bootstrap follows a <strong>component-first</strong> approach. You can quickly assemble a professional-looking interface by combining ready-made components like <code>.navbar</code>, <code>.card</code>, <code>.btn</code>, <code>.modal</code>, and <code>.form-control</code>. Customization is achieved through <strong>Sass variables</strong> and a built-in theme system.</p>
+
+            <pre><code>&lt;div class="card" style="max-width: 24rem;"&gt;
+    &lt;img src="photo.jpg" class="card-img-top"
+         alt="Card image"&gt;
+
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Card Title&lt;/h5&gt;
+        &lt;p class="card-text"&gt;
+            This is a description using
+            Bootstrap component classes.
+        &lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;
+            Learn More
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h2>Key Differences</h2>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 24px 0;">
+              <div class="p-6 bg-beige rounded-xl">
+                <h3 class="font-bold text-lg mb-3">Tailwind CSS</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                  <li>Utility-first approach</li>
+                  <li>Fully customizable design system</li>
+                  <li>Smaller production builds (purge CSS)</li>
+                  <li>No pre-built components</li>
+                  <li>Steeper learning curve</li>
+                  <li>Built with mobile-first breakpoints</li>
+                </ul>
+              </div>
+              <div class="p-6 bg-beige rounded-xl">
+                <h3 class="font-bold text-lg mb-3">Bootstrap</h3>
+                <ul class="list-disc pl-5 space-y-2">
+                  <li>Component-first approach</li>
+                  <li>Ready-made UI components</li>
+                  <li>Larger file size (no purge)</li>
+                  <li>Consistent look out of the box</li>
+                  <li>Gentler learning curve</li>
+                  <li>Built-in JavaScript plugins</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2>Comparison Table</h2>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Tailwind CSS</th>
+                  <th>Bootstrap</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Approach</strong></td>
+                  <td>Utility-first</td>
+                  <td>Component-first</td>
+                </tr>
+                <tr>
+                  <td><strong>Learning Curve</strong></td>
+                  <td>Steeper (utility classes)</td>
+                  <td>Gentler (pre-built components)</td>
+                </tr>
+                <tr>
+                  <td><strong>Customization</strong></td>
+                  <td>Extensive via config file</td>
+                  <td>Moderate via Sass variables</td>
+                </tr>
+                <tr>
+                  <td><strong>File Size (prod)</strong></td>
+                  <td>Very small (purged)</td>
+                  <td>Larger (includes all components)</td>
+                </tr>
+                <tr>
+                  <td><strong>JavaScript</strong></td>
+                  <td>None included</td>
+                  <td>Built-in JS plugins</td>
+                </tr>
+                <tr>
+                  <td><strong>Design Uniqueness</strong></td>
+                  <td>Highly unique designs</td>
+                  <td>Can look similar across sites</td>
+                </tr>
+                <tr>
+                  <td><strong>Best For</strong></td>
+                  <td>Custom design systems</td>
+                  <td>Rapid prototyping, admin panels</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2>Advantages of Tailwind CSS</h2>
+
+            <h3>Complete Design Control</h3>
+            <p>You are not fighting against pre-built styles. Every pixel is intentional and custom to your brand.</p>
+
+            <h3>Small Production Bundles</h3>
+            <p>Tailwind purges unused classes in production, resulting in tiny CSS files (often &lt;10KB gzipped).</p>
+
+            <h3>Responsive by Default</h3>
+            <p>Responsive variants like <code>sm:</code>, <code>md:</code>, <code>lg:</code> make mobile-first design intuitive.</p>
+
+            <h3>Consistent Design System</h3>
+            <p>A predefined scale for spacing, typography, and colors ensures visual consistency across your entire project.</p>
+
+            <h2>Advantages of Bootstrap</h2>
+
+            <h3>Rapid Prototyping</h3>
+            <p>With pre-built components, you can assemble a functional UI in minutes. Great for MVPs and hackathons.</p>
+
+            <h3>Large Community</h3>
+            <p>Bootstrap has the largest CSS framework community. Extensive tutorials, themes, templates, and third-party tools.</p>
+
+            <h3>Accessibility Built In</h3>
+            <p>Bootstrap components are built with ARIA attributes and accessibility best practices out of the box.</p>
+
+            <h3>Excellent Documentation</h3>
+            <p>Bootstrap's documentation is considered the gold standard—comprehensive examples, clear guidelines, and live demos.</p>
+
+            <h2>When to Use Which?</h2>
+
+            <h3>Choose Tailwind CSS When:</h3>
+            <ul>
+              <li>You need a completely custom, unique design</li>
+              <li>You are building a design system from scratch</li>
+              <li>Bundle size and performance are critical</li>
+              <li>Your team prefers working in HTML over CSS</li>
+              <li>You are building a component library with React/Vue</li>
+            </ul>
+
+            <h3>Choose Bootstrap When:</h3>
+            <ul>
+              <li>You need a working UI fast (prototypes, MVPs)</li>
+              <li>You are building an admin dashboard or internal tool</li>
+              <li>You want built-in JavaScript components (modals, carousels)</li>
+              <li>Your team includes designers who prefer traditional CSS</li>
+              <li>You value extensive documentation and community support</li>
+            </ul>
+
+            <h2>Final Conclusion</h2>
 
             <p>There is no universally "better" framework—the right choice depends on your <strong>project requirements</strong>, <strong>team expertise</strong>, and <strong>design goals</strong>. Both Tailwind CSS and Bootstrap are excellent tools that serve different needs.</p>
 
