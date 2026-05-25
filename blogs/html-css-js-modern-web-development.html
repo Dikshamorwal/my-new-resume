@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive guide to HTML, CSS, and JavaScript - the three core technologies that power the modern web.">
+  <title>HTML, CSS & JavaScript: Modern Web Development Trio | Diksha Morwal</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: '#f5f0eb',
+            'beige-hover': '#ede6de',
+            brown: '#b8a08e',
+            'brown-dark': '#8b7355',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .blog-article h2 { font-size: 1.75rem; font-weight: 700; margin: 40px 0 16px; }
+    .blog-article h3 { font-size: 1.3rem; font-weight: 600; margin: 32px 0 12px; }
+    .blog-article p { color: #4b5563; line-height: 1.8; margin-bottom: 16px; }
+    .blog-article ul, .blog-article ol { color: #4b5563; line-height: 1.8; margin-bottom: 16px; padding-left: 24px; }
+    .blog-article li { margin-bottom: 8px; }
+    .blog-article pre { background: #1a1a2e; color: #e2e8f0; padding: 20px; border-radius: 12px; overflow-x: auto; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; }
+    .blog-article code { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+    .blog-article pre code { background: none; padding: 0; }
+    .blog-article p code, .blog-article li code { background: #f5f0eb; padding: 2px 8px; border-radius: 4px; font-size: 0.88rem; color: #1a1a1a; }
+    .blog-article blockquote { border-left: 4px solid #b8a08e; padding: 16px 24px; margin: 24px 0; background: #f5f0eb; border-radius: 0 12px 12px 0; font-style: italic; color: #4b5563; }
+    .blog-article table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+    .blog-article th, .blog-article td { border: 1px solid #e5e7eb; padding: 12px 16px; text-align: left; }
+    .blog-article th { background: #f5f0eb; font-weight: 600; }
+    .blog-article img { border-radius: 12px; margin: 24px 0; }
+  </style>
+</head>
+<body data-page="blog">
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section" style="padding-top: 140px;">
+      <div class="container">
+        <div class="max-w-3xl mx-auto">
+          <a href="../blog.html" class="inline-flex items-center gap-2 text-brown hover:text-black mb-8 transition">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Blog
+          </a>
+
+          <article class="blog-article">
+            <div class="flex items-center gap-4 mb-4">
+              <span class="text-sm font-semibold uppercase tracking-wider text-brown">Web Development</span>
+              <span class="text-sm text-gray-400">May 23, 2026</span>
+              <span class="text-sm text-gray-400">6 min read</span>
+            </div>
+
+            <h1 class="text-4xl font-bold mb-8 leading-tight">HTML, CSS & JavaScript: Modern Web Development Trio</h1>
+
+            <p class="text-lg text-gray-500 leading-relaxed mb-8">A comprehensive guide to the three core technologies that power the modern web.</p>
+
+            <p>Every website you visit—from a simple blog to a complex web application—is built on three fundamental technologies: <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>. Together, they form the indispensable trio of modern web development. Understanding how they complement each other is the first step toward becoming a proficient front-end or full-stack developer.</p>
+
+            <p>Think of a website as a house: <strong>HTML</strong> provides the structure (walls, rooms, foundation), <strong>CSS</strong> handles the aesthetics (paint, wallpaper, interior design), and <strong>JavaScript</strong> adds the functionality (lights that turn on, doors that open, a thermostat that adjusts itself).</p>
+
+            <p>In this article, we will explore each technology in detail, examine how they work together, and understand why mastering this trio is essential for anyone pursuing a career in web development.</p>
+
+            <h2>HTML — The Structure</h2>
+
+            <p><strong>HyperText Markup Language (HTML)</strong> is the backbone of every web page. It provides the semantic structure that defines headings, paragraphs, links, images, and other content elements. Without HTML, a web page is just a blank canvas.</p>
+
+            <p>HTML uses a system of <strong>tags</strong> to wrap content and give it meaning. For example, <code>&lt;h1&gt;</code> defines a top-level heading, <code>&lt;p&gt;</code> defines a paragraph, and <code>&lt;a&gt;</code> creates a hyperlink. Modern HTML (HTML5) introduced semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> that make the code more readable and accessible.</p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;a href="#home"&gt;Home&lt;/a&gt;
+            &lt;a href="#about"&gt;About&lt;/a&gt;
+            &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Blog Post Title&lt;/h2&gt;
+            &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2026 My Website&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <p>Writing clean, semantic HTML improves <strong>SEO</strong>, <strong>accessibility</strong>, and <strong>maintainability</strong>. Screen readers rely on semantic HTML to navigate content, and search engines use it to understand page structure.</p>
+
+            <h2>CSS — The Presentation</h2>
+
+            <p><strong>Cascading Style Sheets (CSS)</strong> controls the visual presentation of HTML elements. It dictates colors, fonts, spacing, layout, and responsive behavior. If HTML is the skeleton, CSS is the skin and clothing.</p>
+
+            <p>CSS works by selecting HTML elements and applying styling rules to them. You can write CSS <strong>inline</strong> (directly on an element), <strong>internally</strong> (inside a <code>&lt;style&gt;</code> tag), or <strong>externally</strong> (in a separate <code>.css</code> file). Modern developers often use utility frameworks like <strong>Tailwind CSS</strong> to speed up styling.</p>
+
+            <pre><code>/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #f8f9fa;
+}
+
+/* Layout with Flexbox */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* Responsive grid with CSS Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Hover effects */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}</code></pre>
+
+            <p>Modern CSS features like <strong>Flexbox</strong>, <strong>Grid</strong>, <strong>Custom Properties (variables)</strong>, and <strong>Animations</strong> give developers unprecedented control over layout and interactivity without needing JavaScript.</p>
+
+            <h2>JavaScript — The Interactivity</h2>
+
+            <p><strong>JavaScript</strong> is the programming language that brings web pages to life. It enables dynamic content updates, form validation, animations, API calls, and full-fledged web applications. While HTML and CSS are markup and style languages, JavaScript is a full-featured, high-level programming language.</p>
+
+            <p>JavaScript runs in the browser (client-side) and can also run on servers via <strong>Node.js</strong>. It supports <strong>object-oriented</strong>, <strong>functional</strong>, and <strong>event-driven</strong> programming paradigms.</p>
+
+            <pre><code>// DOM Manipulation
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('cta-btn');
+    const output = document.getElementById('output');
+
+    button.addEventListener('click', () => {
+        output.textContent = 'Button was clicked!';
+        output.style.color = '#06b6d4';
+        output.classList.add('fade-in');
+    });
+});
+
+// Fetch API & Async/Await
+async function fetchUserData(userId) {
+    try {
+        const response = await fetch(
+            `https://api.example.com/users/${userId}`
+        );
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Fetch error:', error);
+    }
+}
+
+// ES6+ Features
+const greet = (name = 'Guest') => `Hello, ${name}!`;
+
+const user = {
+    name: 'Diksha',
+    role: 'Developer',
+    skills: ['Python', 'JavaScript', 'Docker'],
+};
+
+const { name, role } = user;
+console.log(`${name} is a ${role}`);</code></pre>
+
+            <p>With the rise of frameworks like <strong>React</strong>, <strong>Vue</strong>, and <strong>Svelte</strong>, JavaScript has become the lingua franca of front-end development. Understanding vanilla JavaScript first, however, builds a rock-solid foundation that makes learning any framework easier.</p>
+
+            <h2>Why Learn These Three?</h2>
+
+            <h3>Universal Foundation</h3>
+            <p>Every web framework and tool ultimately compiles down to HTML, CSS, and JavaScript. Master the core and any framework becomes approachable.</p>
+
+            <h3>Full Creative Control</h3>
+            <p>Knowing CSS deeply allows you to create pixel-perfect, responsive, and accessible designs without fighting against framework defaults.</p>
+
+            <h3>Endless Possibilities</h3>
+            <p>From interactive UIs to real-time apps and serverless functions, JavaScript runs everywhere—browser, server, mobile, and desktop.</p>
+
+            <p>Together, these three technologies offer a <strong>complete toolkit</strong> for building modern web experiences. Whether you are creating a personal portfolio, an e-commerce platform, or a SaaS product, HTML, CSS, and JavaScript are the threads that weave the web together.</p>
+
+            <h2>Conclusion</h2>
+
+            <p>HTML, CSS, and JavaScript are not just tools—they are the <strong>foundation stones</strong> of the entire World Wide Web. By investing time in understanding each one deeply, you gain the ability to build anything you can imagine online.</p>
+
+            <p>Start with <strong>HTML</strong> to structure your content, layer <strong>CSS</strong> to style it beautifully, and finally add <strong>JavaScript</strong> to make it interactive. Practice by building small projects—a personal homepage, a to-do app, or a weather dashboard. Each project will deepen your understanding.</p>
+
+            <p>The web is a constantly evolving ecosystem, but HTML, CSS, and JavaScript remain its immutable core.</p>
+
+            <p class="text-brown font-semibold mt-8">— Every Web Developer's Journey</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="../assets/js/main.js?v=2"></script>
+</body>
+</html>

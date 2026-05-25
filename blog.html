@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog by Diksha Morwal - Articles on Python, Flask, FastAPI, Docker, and web development.">
+  <title>Blog | Diksha Morwal</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            beige: '#f5f0eb',
+            'beige-hover': '#ede6de',
+            brown: '#b8a08e',
+            'brown-dark': '#8b7355',
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body data-page="blog">
+  <div id="navbar-placeholder"></div>
+
+  <main>
+    <section class="section" style="padding-top: 140px;">
+      <div class="container">
+        <div class="text-center mb-12 fade-in">
+          <span class="section-tag">Blog</span>
+          <h1 class="section-title">Articles & Insights</h1>
+          <p class="section-subtitle mx-auto">Thoughts on Python, backend development, DevOps, and technology.</p>
+        </div>
+
+        <div class="blog-search fade-in">
+          <input type="text" id="blogSearch" placeholder="Search articles..." aria-label="Search blog posts">
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card fade-in" data-category="Web Development" data-title="HTML, CSS & JavaScript: Modern Web Development Trio">
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">Web Development</span>
+                <span class="blog-card-date">May 23, 2026</span>
+              </div>
+              <h3>HTML, CSS & JavaScript: Modern Web Development Trio</h3>
+              <p>A comprehensive guide to the three core technologies that power the modern web. Learn how HTML, CSS, and JavaScript work together.</p>
+              <a href="blogs/html-css-js-modern-web-development.html" class="btn btn-beige btn-sm">Read More</a>
+            </div>
+          </article>
+
+          <article class="blog-card fade-in" data-category="CSS Frameworks" data-title="Tailwind CSS vs Bootstrap: Which Framework Should You Choose?">
+            <div class="blog-card-body">
+              <div class="blog-card-meta">
+                <span class="blog-card-category">CSS Frameworks</span>
+                <span class="blog-card-date">May 23, 2026</span>
+              </div>
+              <h3>Tailwind CSS vs Bootstrap: Which Framework Should You Choose?</h3>
+              <p>A detailed comparison of the two most popular CSS frameworks to help you make the right choice for your next project.</p>
+              <a href="blogs/tailwind-css-vs-bootstrap.html" class="btn btn-beige btn-sm">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>
