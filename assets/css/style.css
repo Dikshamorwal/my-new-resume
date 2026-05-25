@@ -905,6 +905,16 @@ ul {
   color: var(--gray);
 }
 
+.resume-preview-header .contact-row a {
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resume-preview-header .contact-row a:hover {
+  color: var(--black);
+}
+
 .resume-section {
   margin-bottom: 32px;
 }
