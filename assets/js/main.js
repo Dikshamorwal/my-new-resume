@@ -31,7 +31,9 @@ function navbarHTML() {
 </nav>`; }
 
 // ===== FOOTER COMPONENT =====
-const FOOTER_HTML = `
+function footerHTML() {
+  const b = base();
+  return `
 <footer class="footer">
   <div class="container">
     <div class="footer-content">
@@ -46,14 +48,16 @@ const FOOTER_HTML = `
         <a href="mailto:dikshamorwal3@gmail.com" aria-label="Email">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
         </a>
+        <a href="${b}contact.html" aria-label="Contact">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; ${new Date().getFullYear()} Diksha Morwal. All rights reserved.</p>
     </div>
   </div>
-</footer>
-`;
+</footer>`; }
 
 // ===== INITIALIZE =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -72,7 +76,7 @@ function injectComponents() {
   const headerPlaceholder = document.getElementById('navbar-placeholder');
   const footerPlaceholder = document.getElementById('footer-placeholder');
   if (headerPlaceholder) headerPlaceholder.innerHTML = navbarHTML();
-  if (footerPlaceholder) footerPlaceholder.innerHTML = FOOTER_HTML;
+  if (footerPlaceholder) footerPlaceholder.innerHTML = footerHTML();
 }
 
 // ===== ACTIVE PAGE =====
