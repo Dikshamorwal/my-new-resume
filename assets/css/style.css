@@ -503,6 +503,10 @@ ul {
   background: linear-gradient(135deg, var(--warm-beige), var(--beige-hover));
 }
 
+.about-content {
+  padding-top: 24px;
+}
+
 .about-content h2 {
   font-size: 2rem;
   font-weight: 700;
