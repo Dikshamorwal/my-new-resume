@@ -323,25 +323,31 @@ ul {
 
 .hero-social {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .hero-social a {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--warm-beige);
-  display: flex;
+  padding: 10px 22px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--black);
+  background-color: transparent;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   color: var(--black);
+  font-weight: 500;
+  font-size: 0.95rem;
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .hero-social a:hover {
   background-color: var(--black);
   color: var(--white);
   transform: translateY(-3px);
+  border-color: var(--black);
 }
 
 .hero-image {
