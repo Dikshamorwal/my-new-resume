@@ -43,5 +43,5 @@ No build tools or npm required.
 
 **Diksha Morwal**  
 Python Backend Developer  
-dikshamorwal3@gmail.com  
+dikshamorwal3[at]gmail[dot]com  
 [github.com/Dikshamorwal](https://github.com/Dikshamorwal)
